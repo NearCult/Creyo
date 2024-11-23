@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+</head>
+<body>
+    <h1>User Management</h1>
+
+    <!-- Form to Add New User -->
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="tof">Types of Focus (Comma-separated):</label>
+            <input type="text" name="tof" id="tof" required>
+        </div>
+        <div>
+            <label for="profile_photo">Profile Photo:</label>
+            <input type="file" name="profile_photo" id="profile_photo" required>
+        </div>
+        <div>
+            <label for="bio">Bio:</label>
+            <textarea name="bio" id="bio" required></textarea>
+        </div>
+        <div>
+            <label for="languages">Languages (Comma-separated):</label>
+            <input type="text" name="languages" id="languages" required>
+        </div>
+        <div>
+            <label for="current_role">Current Role:</label>
+            <input type="text" name="current_role" id="current_role" required>
+        </div>
+        <div>
+            <label for="user_experience">Experience (Years):</label>
+            <input type="number" name="user_experience" id="user_experience" required>
+        </div>
+        <button type="submit">Add User</button>
+    </form>
+
+    <hr>
+
+    <!-- List of Users -->
+    <h2>Users</h2>
+    <ul>
+        <% users.forEach(user => { %>
+            <li>
+                <img src="<%= user.profile_photo %>" alt="Profile Photo" style="width: 100px; height: 100px;">
+                <h3><%= user.current_role %></h3>
+                <p><strong>Bio:</strong> <%= user.bio %></p>
+                <p><strong>Languages:</strong> <%= user.languages.join(', ') %></p>
+                <p><strong>Experience:</strong> <%= user.user_experience %> years</p>
+                <p><strong>Types of Focus:</strong> <%= user.tof.join(', ') %></p>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
