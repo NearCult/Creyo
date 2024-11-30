@@ -19,3 +19,54 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+@font-face {
+  font-family: 'RockSalt';
+  src: url('/fonts/RockSalt.ttf') format('truetype');
+}
+
+h1 {
+  font-family: 'RockSalt', cursive;
+}
+@keyframes borderRevolution {
+  0% {
+    transform: scaleX(0);
+    border-radius: 10px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+  }
+  25% {
+    transform: scaleX(1);
+    border-bottom: 2px solid orange;  /* Start with bottom border */
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+  }
+  50% {
+    transform: scaleY(1);
+    border-bottom: 2px solid orange;
+    border-left: 2px solid orange;  /* Move to left border */
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+  }
+  75% {
+    transform: scaleX(1);
+    border-bottom: 2px solid orange;
+    border-left: 2px solid orange;
+    border-top: 2px solid orange;  /* Move to top border */
+    border-right: 2px solid transparent;
+  }
+  100% {
+    transform: scaleX(1);
+    border-bottom: 2px solid orange;
+    border-left: 2px solid orange;
+    border-top: 2px solid orange;
+    border-right: 2px solid orange;  /* Complete the loop to the right */
+  }
+}
+
+/* Hover effect for the header */
+.group:hover .group-hover\:animate-borderRevolution {
+  animation: borderRevolution 2s linear forwards;
+}
