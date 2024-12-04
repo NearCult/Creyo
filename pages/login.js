@@ -73,7 +73,7 @@ export default function LoginPage() {
         ) : (
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold text-center text-gray-900">
-              Login
+              Welcome Back
             </h2>
             <form className="space-y-4">
               <div className="mb-4">
