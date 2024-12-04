@@ -1,7 +1,7 @@
 import LancerProfile from "@/db/freelancerProfile";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
 
 const FreelancerDashboard = () => {
   const router = useRouter();

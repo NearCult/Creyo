@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { useRouter } from "next/navigation";
 

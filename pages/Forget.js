@@ -1,7 +1,7 @@
 import Mailer from "@/db/mail";
 import Link from "next/link";
 import { useState } from "react";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
 
 export default function ForgotPage() {
   const [email, setEmail] = useState("");

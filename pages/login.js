@@ -3,7 +3,7 @@ import Cookies from "js-cookie";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");

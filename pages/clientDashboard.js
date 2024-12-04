@@ -1,5 +1,5 @@
 import { useRouter } from "next/navigation";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
 
 const ClientDashboard = () => {
   const router = useRouter();

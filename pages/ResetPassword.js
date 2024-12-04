@@ -1,7 +1,7 @@
 import OtpSaver from "@/db/otp";
 import Verify from "@/db/verify";
 import { useRef, useState, useEffect } from "react";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
 import { useRouter } from "next/router";
 
 export default function ResetPage() {

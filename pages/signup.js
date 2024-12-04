@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import signupUser from "@/db/SignUp";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
 import Link from "next/link";
 
 export default function Signup() {
@@ -22,7 +22,7 @@ export default function Signup() {
     }
 
     try {
-      await signupUser(firstName, lastName, email, password, country);
+      await signupUser(firstName, las, email, password, country);
       router.push("/login");
     } catch (error) {
       setError("Signup failed. Please try again.");

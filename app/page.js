@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import Navbar from '@/components/NavBar'
 import '@/app/internation.css'
 import "../app/globals.css"
-import "tailwindcss/tailwind.css"
+// import "tailwindcss/tailwind.css"
 
 const Welcome = () => {
   const [query, setQuery] = useState('')

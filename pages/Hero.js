@@ -2,7 +2,7 @@ import Cookies from "js-cookie";
 import { decode } from "jsonwebtoken";
 import { jwtDecode } from "jwt-decode";
 import { useEffect, useState } from "react";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
 
 export default function HeroPage() {
   const [mail, setMail] = useState("");
