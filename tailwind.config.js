@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--background, #ffffff)", // Fallback to white
+        foreground: "var(--foreground, #000000)", // Fallback to black
       },
       keyframes: {
         gradient: {
@@ -19,12 +19,16 @@ module.exports = {
         },
       },
       animation: {
-        gradient: 'gradient 50s ease infinite',
+        gradient: 'gradient 30s linear infinite', // Adjust timing as needed
       },
       backgroundSize: {
         '400%': '400%',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // Example plugins
+    // require('@tailwindcss/forms'),
+    // require('@tailwindcss/typography'),
+  ],
 };
