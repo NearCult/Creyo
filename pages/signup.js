@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import signupUser from "@/db/SignUp";
-// import "tailwindcss/tailwind.css";
+import "tailwindcss/tailwind.css";
 import Link from "next/link";
 
 export default function Signup() {
