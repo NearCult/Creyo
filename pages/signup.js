@@ -33,19 +33,13 @@ export default function Signup() {
     <div className="flex h-screen bg-gray-200">
       {/* Left Section - Video Background (Visible on mobile and desktop) */}
       <div className="relative hidden lg:block w-1/2 h-full">
-        <video
-          src="/images/signup.mp4"
-          autoPlay
-          loop
-          muted
-          className="w-full h-full object-cover absolute top-0 left-0 z-0"
-          type="video/mp4"
-          disablePictureInPicture
-          style={{ pointerEvents: "none" }}
+        <img
+          src="/images/signup.gif"
+          alt="signup gif"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-
-
       </div>
+
 
       {/* Right Section - Form */}
       <div className="flex w-full lg:w-1/2 justify-center items-center p-4 bg-white z-10 relative">
