@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { jwtDecode } from "jwt-decode";
 import { useEffect, useState } from "react";
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
 import Cookies from "js-cookie";
 import Image from "next/image";
 import CreyoLogo from '../public/images/CreyoLogo.png';
