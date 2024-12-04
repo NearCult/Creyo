@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Navbar from '@/components/NavBar'
 import '@/app/internation.css'
+import "../app/globals.css"
+import "tailwindcss/tailwind.css"
 
 const Welcome = () => {
   const [query, setQuery] = useState('')
