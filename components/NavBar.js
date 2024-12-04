@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import "tailwindcss/tailwind.css";
 import Cookies from "js-cookie";
 import Image from "next/image";
-import logo from "@/public/images/CreyoLogo.png"
+import CreyoLogo from '../public/images/CreyoLogo.png';
 
 export default function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -68,7 +68,7 @@ export default function Navbar() {
         <div className="flex items-center h-10 m-0">
           {/* Logo */}
           <Link href="/">
-            <Image src={logo} alt="CREYO Logo" width={180} height={40} objectFit="contain" className="mt-5" />
+            <Image src={CreyoLogo} alt="CREYO Logo" width={180} height={40} objectFit="contain" className="mt-5" />
           </Link>
         </div>
       </div>
